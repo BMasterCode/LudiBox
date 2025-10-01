@@ -10,18 +10,16 @@ header {
     padding: 1%;
     text-align: center;
     border-bottom: 2px solid white;
-}
-header h1 {
-    font-size: 3em;
-    color: #322a2a;
-    margin-bottom: 10px;
-    position: sticky;
+    position : sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(152, 61, 61, 0.1);
 }
 nav {
     background-color: #6422F2;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(152, 61, 61, 0.1);
-    position: sticky;
     top: 0;
 }
 nav > ul {
@@ -36,7 +34,7 @@ nav > ul {
 }
 nav > ul > li {
     display: inline;
-    margin: 2%;
+    margin: 3%;
 }
 nav > ul > li > a {
     text-decoration: none;
@@ -51,9 +49,31 @@ nav .logo {
     vertical-align: middle;
     margin-right: 10px;
 }
+#numero{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+#numero:hover {
+    transform: scale(1.1);
+}
+.main-juegos{
+    padding: 2px;
+    background-image: url(imagenes/fondo4.jpg);
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center
+}
 .main-content {
     padding: 20px;
-    background-image: url(imagenes/ninos.jpg);
+    background-image: url(imagenes/fondo3.0.webp);
     min-height: 80vh;
     background-size: cover;
     background-position: center;
@@ -98,8 +118,8 @@ nav .logo {
 }
 
 .card{
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 320px;
     margin: 20px;
     position: relative;
     transform-style: preserve-3d;
@@ -154,7 +174,8 @@ nav .logo {
     text-align: center;
 }
 SECTION H1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin: 20px 0;
-    color: #0d0d0d;
+    color: #ffffff;
 }
