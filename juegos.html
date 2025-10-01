@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LudiBox</title>
+    <!-- icono que se muestra en el buscador -->
     <link rel="icon" href="imagenes/favicon.ico" type="image/png" />
+    <!-- enlace a la hoja de estilos CSS -->
     <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -27,24 +29,235 @@
         </nav>
     </header>
     <main>
-        <div class="card-container">
-            <div class="card" id="catan">
-                <div class="card-front">
-                    <img src="juegos/catan.png" alt="catan">
+        <section class="juegos-mesa">
+            <h1>JUEGOS DE MESA</h1>
+            <div class="card-container">
+                <div class="card" id="catan">
+                    <!-- parte delantera -->
+                    <div class="card-front">
+                        <img src="juegos/catan.png" alt="catan">
+                    </div>
+                    <!-- parte que va a girar -->
+                    <div class="card-back">
+                        <p class="card-descripcion">
+                            <strong class="title">🌍 CATAN</strong> <br>
+                            Un clásico juego de estrategia donde los jugadores colonizan una isla, construyendo
+                            pueblos, ciudades y carreteras mientras comercian recursos. <br>
+                            Especificaciones: <br>
+                            ⏳ Tiempo: 60 – 120 min <br>
+                            👥 Jugadores: 3 – 4 (con expansiones hasta 6) <br>
+                            🎚️ Dificultad: Media
+                        </p>
+                    </div>
                 </div>
-                <div class="card-back">
-                    <p class="card-descripcion">
-                        🌍 CATAN <br>
-                        Un clásico juego de estrategia donde los jugadores colonizan una isla, construyendo
-                        pueblos, ciudades y carreteras mientras comercian recursos.
-                        Especificaciones: <br>
-                        ⏳ Tiempo: 60 – 120 min <br>
-                        👥 Jugadores: 3 – 4 (con expansiones hasta 6) <br>
-                        🎚️ Dificultad: Media
-                    </p>
+                <div class="card" id="ticket">
+                    <!-- parte delantera -->
+                    <div class="card-front">
+                        <img src="juegos/ticket-to-ride-europe.webp" alt="ticket">
+                    </div>
+                    <!-- parte que va a girar -->
+                    <div class="card-back">
+                        <p class="card-descripcion">
+                            <strong class="title">🚂 TICKET TO RIDE EUROPE</strong>
+                            Descripción: Un juego de estrategia en el que los jugadores compiten por construir rutas
+                            ferroviarias que conectan ciudades en un mapa. <br>
+                            Especificaciones: <br>
+                            ⏳ Tiempo: 45 – 75 min <br>
+                            👥 Jugadores: 2 – 5 <br>
+                            🎚️ Dificultad: Media
+                        </p>
+                    </div>
+                </div>
+                <div class="card" id="coffee">
+                    <!-- parte delantera -->
+                    <div class="card-front">
+                        <img src="juegos/coffe-rush.webp" alt="coffee">
+                    </div>
+                    <!-- parte que va a girar -->
+                    <div class="card-back">
+                        <p class="card-descripcion">
+                            <strong class="title">☕ COFFEE RUSH</strong> <br>
+                            Un juego de estrategia y gestión de recursos donde los jugadores asumen el papel de
+                            baristas en una cafetería, compitiendo por preparar y servir las mejores bebidas a los
+                            clientes.
+                            Especificaciones: <br>
+                            ⏳ Tiempo: 30 – 45 min <br>
+                            👥 Jugadores: 2 – 4 <br>
+                            🎚️ Dificultad: media
+                        </p>
+                    </div>
+                </div>
+                <div class="card" id="basta">
+                    <!-- parte delantera -->
+                    <div class="card-front">
+                        <img src="juegos/basta.jpg" alt="basta">
+                    </div>
+                    <!-- parte que va a girar -->
+                    <div class="card-back">
+                        <p class="card-descripcion">
+                            <strong class="title">🅱️ BASTA</strong> <br>
+                            Un juego de palabras rápido y divertido donde los jugadores deben completar categorías
+                            con palabras que comienzan con una letra específica antes de que se acabe el tiempo.
+                            Especificaciones: <br>
+                            ⏳ Tiempo: 20 – 30 min <br>
+                            👥 Jugadores: 2 – 6 <br>
+                            🎚️ Dificultad: Baja
+                        </p>
+                    </div>
+                </div>
+                <div class="card" id="amigos-de-mierda">
+                    <!-- parte delantera -->
+                    <div class="card-front">
+                        <img src="juegos/Amigos-de-mierda.webp" alt="amigos-de-mierda">
+                    </div>
+                    <!-- parte que va a girar -->
+                    <div class="card-back">
+                        <p class="card-descripcion">
+                            <strong class="title">💩 AMIGOS DE MIERDA</strong> <br>
+                            Un juego de cartas irreverente y humorístico donde los jugadores compiten para crear las
+                            combinaciones de cartas más divertidas y ofensivas posibles. <br>
+                            Especificaciones: <br>
+                            ⏳ Tiempo: 30 – 45 min <br>
+                            👥 Jugadores: 3 – 10 <br>
+                            🎚️ Dificultad: Baja
+                        </p>
+                    </div>
+                </div>
+                <div class="card" id="monopoly-banco-electronico">
+                    <!-- parte delantera -->
+                    <div class="card-front">
+                        <img src="juegos/monopolio-banco-electronico.jpg" alt="monopoly-banco-electronico">
+                    </div>
+                    <!-- parte que va a girar -->
+                    <div class="card-back">
+                        <p class="card-descripcion">
+                            <strong class="title">🏦 MONOPOLY BANCO ELECTRÓNICO</strong> <br>
+                            Una versión moderna del clásico juego de Monopoly que utiliza tarjetas de crédito y un
+                            lector electrónico para manejar las transacciones, haciendo el juego más rápido y
+                            dinámico. <br>
+                            Especificaciones: <br>
+                            ⏳ Tiempo: 60 – 90 min <br>
+                            👥 Jugadores: 2 – 6 <br>
+                            🎚️ Dificultad: Baja
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="juegos-cartas">
+            <H1>JUEGOS DE CARTAS</H1>
+            <div class="card-container">
+                <div class="card" id="virus">
+                    <!-- parte delantera -->
+                    <div class="card-front">
+                        <img src="juegos/virus.jpg" alt="virus">
+                    </div>
+                    <!-- parte que va a girar -->
+                    <div class="card-back">
+                        <p class="card-descripcion">
+                            <strong class="title">🦠 VIRUS</strong> <br>
+                            Un juego de cartas estratégico y rápido donde los jugadores compiten para propagar
+                            enfermedades y curar a sus pacientes antes que los demás. <br>
+                            Especificaciones: <br>
+                            ⏳ Tiempo: 20 – 30 min <br>
+                            👥 Jugadores: 2 – 6 <br>
+                            🎚️ Dificultad: Baja
+                        </p>
+                    </div>
+                </div>
+                <div class="card" id="virus2">
+                    <!-- parte delantera -->
+                    <div class="card-front">
+                        <img src="juegos/virus2.jpg" alt="virus2">
+                    </div>
+                    <!-- parte que va a girar -->
+                    <div class="card-back">
+                        <p class="card-descripcion">
+                            <strong class="title">🦠 VIRUS 2</strong> <br>
+                            Una expansión del juego de cartas Virus que añade nuevas cartas y mecánicas para
+                            aumentar la diversión y la estrategia del juego original. <br>
+                            Especificaciones: <br>
+                            ⏳ Tiempo: 20 – 30 min <br>
+                            👥 Jugadores: 2 – 6 <br>
+                            🎚️ Dificultad: Baja
+                        </p>
+                    </div>
+                </div>
+                <div class="card" id="virus-halloween">
+                    <!-- parte delantera -->
+                    <div class="card-front">
+                        <img src="juegos/virus-halloween.jpg" alt="virus-halloween">
+                    </div>
+                    <!-- parte que va a girar -->
+                    <div class="card-back">
+                        <p class="card-descripcion">
+                            <strong class="title">🦠 VIRUS HALLOWEEN</strong> <br>
+                            Una edición temática de Halloween del juego de cartas Virus, con nuevas cartas y
+                            mecánicas inspiradas en la festividad para añadir un toque espeluznante a la diversión.
+                            <br>
+                            Especificaciones: <br>
+                            ⏳ Tiempo: 20 – 30 min <br>
+                            👥 Jugadores: 2 – 6 <br>
+                            🎚️ Dificultad: Baja
+                        </p>
+                    </div>
+                </div>
+                <div class="card" id="gatitos-explosivos">
+                    <!-- parte delantera -->
+                    <div class="card-front">
+                        <img src="juegos/gatitos-explosivos.jpg" alt="gatitos-explosivos">
+                    </div>
+                    <!-- parte que va a girar -->
+                    <div class="card-back">
+                        <p class="card-descripcion">
+                            <strong class="title">🐱 GATITOS EXPLOSIVOS 💣</strong> <br>
+                            Un juego de cartas divertido y caótico donde los jugadores intentan evitar sacar la carta
+                            de gatito explosivo mientras usan cartas de acción para sabotear a sus oponentes. <br>
+                            Especificaciones: <br>
+                            ⏳ Tiempo: 15 – 30 min <br>
+                            👥 Jugadores: 2 – 5 <br>
+                            🎚️ Dificultad: Baja
+                        </p>
+                    </div>
+                </div>
+                <div class="card" id="spot-it">
+                    <!-- parte delantera -->
+                    <div class="card-front">
+                        <img src="juegos/spot-it.jpg" alt="spot-it">
+                    </div>
+                    <!-- parte que va a girar -->
+                    <div class="card-back">
+                        <p class="card-descripcion">
+                            <strong class="title">🔍 SPOT IT!</strong> <br>
+                            Un juego de cartas rápido y divertido donde los jugadores deben encontrar el símbolo
+                            coincidente entre dos cartas antes que los demás. <br>
+                            Especificaciones: <br>
+                            ⏳ Tiempo: 15 – 30 min <br>
+                            👥 Jugadores: 2 – 8 <br>
+                            🎚️ Dificultad: Baja
+                        </p>
+                    </div>
+                </div>
+                <div class="card" id="pio-pio">
+                    <!-- parte delantera -->
+                    <div class="card-front">
+                        <img src="juegos/pio-pio.jpg" alt="pio-pio">
+                    </div>
+                    <!-- parte que va a girar -->
+                    <div class="card-back">
+                        <p class="card-descripcion">
+                            <strong class="title">🐥 PIO PIO</strong> <br>
+                            Un juego de cartas estratégico y divertido donde los jugadores compiten para reunir
+                            pollitos y evitar que sus oponentes se queden con ellos. <br>
+                            Especificaciones: <br>
+                            ⏳ Tiempo: 20 – 30 min <br>
+                            👥 Jugadores: 2 – 6 <br>
+                            🎚️ Dificultad: Baja
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 </body>

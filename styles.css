@@ -36,7 +36,7 @@ nav > ul {
 }
 nav > ul > li {
     display: inline;
-    margin: 0 15px;
+    margin: 2%;
 }
 nav > ul > li > a {
     text-decoration: none;
@@ -90,19 +90,26 @@ nav .logo {
 
 .card-container {
     perspective: 1000px;
+    display: inline-flex;
+    margin: 20px;
+    vertical-align: top;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card{
     width: 300px;
     height: 300px;
-    margin: 20px auto;
+    margin: 20px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.8s;
     cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.card-container:hover .card{
+.card:hover{
     transform: rotateY(180deg);
 }
 
@@ -134,4 +141,20 @@ nav .logo {
     font-size: 18px;
     text-align: left;
     padding: 0 10px;
+}
+.card img{
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
+}
+.card .title{
+    font-size: 22px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+SECTION H1{
+    text-align: center;
+    margin: 20px 0;
+    color: #0d0d0d;
 }
