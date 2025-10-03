@@ -17,7 +17,7 @@ header {
     box-shadow: 0 2px 4px rgba(152, 61, 61, 0.1);
 }
 nav {
-    background-color: #6422F2;
+    background-color: #35ECF2;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(152, 61, 61, 0.1);
     top: 0;
@@ -40,6 +40,10 @@ nav > ul > li > a {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold; /* Cambiado a negrita*/
+    font-size: 18px; /* Tamaño de fuente más grande */
+    transition: color 0.3s;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav > ul > li > a:hover {
     color: #007BFF;
@@ -82,15 +86,16 @@ nav .logo {
     background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
     backdrop-filter: blur(8px); /* Desenfoque */
     padding: 5%;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
     padding: 2em;
     margin: 1em;
+    color: #ffffff;
 }
 .sobre_nosotros h1{
     margin-bottom: 20px;
     text-align: center;
-    color: #0d0d0d;
+    /* color: #0d0d0d; */
 }
 
 .reglas{
@@ -119,7 +124,7 @@ nav .logo {
 
 .card{
     width: 280px;
-    height: 320px;
+    height: 340px;
     margin: 20px;
     position: relative;
     transform-style: preserve-3d;
@@ -129,7 +134,7 @@ nav .logo {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.card:hover{
+.card.volteada{
     transform: rotateY(180deg);
 }
 
@@ -163,7 +168,7 @@ nav .logo {
     padding: 0 10px;
 }
 .card img{
-    width: 85%;
+    width: 90%;
     height: auto;
     border-radius: 10px;
 }
@@ -179,3 +184,53 @@ SECTION H1{
     margin: 20px 0;
     color: #ffffff;
 }
+.tutorial-link{
+    text-decoration: none;
+    color: #3574F2;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 7px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.tutorial-link:hover{
+    color: #0d0d0d;
+}
+footer {
+    background-color: #0D0D0D;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    /* margin-top: 20px; */
+    /* border-top: 2px solid #e7e7e7; */
+}
+.grupo-whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.grupo-whatsapp img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.grupo-whatsapp p{
+    max-width: 400px;
+    font-size: 16px;
+    color: #ffffff;
+}
+.grupo-whatsapp a{
+    color: #35ECF2;
+    text-decoration: none;
+    font-weight: bold;
+}
+.grupo-whatsapp a:hover{
+    text-decoration: underline;
+}
+
