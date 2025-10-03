@@ -82,6 +82,22 @@ nav .logo {
     background-size: cover;
     background-position: center;
 }
+.main-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.bienvenido{
+    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+    backdrop-filter: blur(8px); /* Desenfoque */
+    padding: 5%;
+    text-align: left;
+    border-radius: 10px;
+    padding: 2em;
+    margin: 1em;
+    color: #ffffff;
+}
 .sobre_nosotros{
     background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
     backdrop-filter: blur(8px); /* Desenfoque */
@@ -92,10 +108,35 @@ nav .logo {
     margin: 1em;
     color: #ffffff;
 }
-.sobre_nosotros h1{
+.info h2{
     margin-bottom: 20px;
     text-align: center;
     /* color: #0d0d0d; */
+}
+.ubicacion{
+    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+    backdrop-filter: blur(8px); /* Desenfoque */
+    padding: 5%;
+    text-align: left;
+    border-radius: 10px;
+    padding: 2em;
+    margin: 1em;
+    color: #ffffff;
+}
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+}
+.mapa iframe{
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .reglas{
@@ -107,6 +148,7 @@ nav .logo {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: left;
     color : white;
+    font-size: large;
 }
 .reglas h2{
     text-align: center;
