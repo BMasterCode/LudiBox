@@ -1,28 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+body{
+    transition: background-color 0.5s ease; /* Transición suave para el cambio de color de fondo*/
+}
+
+body.fondo-oscuro {
+    background-color: #0d0d0d; /* Color de fondo oscuro con transparencia */
+}
+
 header {
     background-color: #4951F2;
     padding: 1%;
     text-align: center;
     border-bottom: 2px solid white;
-    position : sticky;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(152, 61, 61, 0.1);
 }
+
 nav {
     background-color: #35ECF2;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(152, 61, 61, 0.1);
     top: 0;
 }
-nav > ul {
+
+nav>ul {
     list-style: none;
     padding: 0;
     /* position: sticky; */
@@ -32,29 +42,37 @@ nav > ul {
     text-align: center;
     margin: 0;
 }
-nav > ul > li {
+
+nav>ul>li {
     display: inline;
     margin: 3%;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
     text-decoration: none;
     color: #ffffff;
-    font-weight: bold; /* Cambiado a negrita*/
-    font-size: 18px; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    /* Cambiado a negrita*/
+    font-size: 18px;
+    /* Tamaño de fuente más grande */
     transition: color 0.3s;
-    text-transform: uppercase; /* Texto en mayúsculas */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
     font-family: Arial, Helvetica, sans-serif;
 }
-nav > ul > li > a:hover {
+
+nav>ul>li>a:hover {
     color: #007BFF;
 }
+
 nav .logo {
     height: 40px;
     vertical-align: middle;
     margin-right: 10px;
 }
+
 /* vereficar para que es #numero*/
-#numero{ 
+#numero {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -66,17 +84,20 @@ nav .logo {
     background-color: #ffffff;
     border-radius: 30px;
 }
+
 #numero:hover {
     transform: scale(1.1);
 }
+
 /* main de juegos */
-.main-juegos{
+.main-juegos {
     padding: 2px;
     background-image: url(imagenes/fondo4.jpg);
     min-height: 80vh;
     background-size: cover;
     background-position: center
 }
+
 /* main de index */
 .main-content {
     padding: 20px;
@@ -85,15 +106,19 @@ nav .logo {
     background-size: cover;
     background-position: center;
 }
+
 .main-content h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-.bienvenido{
-    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
-    backdrop-filter: blur(8px); /* Desenfoque */
+
+.bienvenido {
+    background: rgba(255, 255, 255, 0.2);
+    /* Fondo semitransparente */
+    backdrop-filter: blur(8px);
+    /* Desenfoque */
     padding: 5%;
     text-align: left;
     border-radius: 10px;
@@ -101,9 +126,12 @@ nav .logo {
     margin: 1em;
     color: #ffffff;
 }
-.sobre_nosotros{
-    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
-    backdrop-filter: blur(8px); /* Desenfoque */
+
+.sobre_nosotros {
+    background: rgba(255, 255, 255, 0.2);
+    /* Fondo semitransparente */
+    backdrop-filter: blur(8px);
+    /* Desenfoque */
     padding: 5%;
     text-align: left;
     border-radius: 10px;
@@ -111,14 +139,18 @@ nav .logo {
     margin: 1em;
     color: #ffffff;
 }
-.info h2{
+
+.info h2 {
     margin-bottom: 20px;
     text-align: center;
     /* color: #0d0d0d; */
 }
-.ubicacion{
-    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
-    backdrop-filter: blur(8px); /* Desenfoque */
+
+.ubicacion {
+    background: rgba(255, 255, 255, 0.2);
+    /* Fondo semitransparente */
+    backdrop-filter: blur(8px);
+    /* Desenfoque */
     padding: 5%;
     text-align: left;
     border-radius: 10px;
@@ -126,110 +158,176 @@ nav .logo {
     margin: 1em;
     color: #ffffff;
 }
-.mapa{
+
+.mapa {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     font-size: 18px;
 }
-.mapa iframe{
+
+.mapa iframe {
     width: 100%;
     max-width: 600px;
     height: 450px;
     border: 2px solid #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para darle profundidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para darle profundidad */
 }
 
-.reglas{
-    background: rgba(128, 104, 236, 0.2); /* Fondo semitransparente */
-    backdrop-filter: blur(8px); /* Desenfoque */
+.reglas {
+    background: rgba(128, 104, 236, 0.2);
+    /* Fondo semitransparente */
+    backdrop-filter: blur(8px);
+    /* Desenfoque */
     padding: 5%;
     margin: 1em;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: left;
-    color : white;
+    color: white;
     font-size: large;
 }
-.reglas h2{
+
+.reglas h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.card-container { /* contenedor de las cartas */
+.card-container {
+    /* contenedor de las cartas */
     perspective: 1000px;
     display: inline-flex;
-    margin: 20px;
+    margin: 20px 10px;
     vertical-align: top;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.card{ /* cartas */
+.card {
+    /* cartas */
     width: 280px;
     height: 340px;
-    margin: 20px;
+    margin: 40px 20px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.8s;
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.card.volteada{  /* clase para voltear las cartas */
+.card.volteada {
+    /* clase para voltear las cartas */
     transform: rotateY(180deg);
 }
 
-.card-front, .card-back{ /* frente y dorso de las cartas */
+.card-front,
+.card-back {
+    /* frente y dorso de las cartas */
     position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
     backface-visibility: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     justify-content: center;
     align-items: center;
     font-size: 24px;
 }
 
-.card-front{ /* frente de las cartas */
+.card-front {
+    /* frente de las cartas */
     background-color: #6422F2;
     color: #ffffff;
     transform: rotateY(0deg);
 }
 
-.card-back{ /* reverso de las cartas */
+.card-back {
+    /* reverso de las cartas */
     background-color: #3574F2;
     color: white;
     transform: rotateY(180deg);
+    height: auto;
 }
-.card-descripcion{ /* descripcion de las cartas */
+
+.card-descripcion {
+    /* descripcion de las cartas */
     font-size: 18px;
     text-align: left;
     padding: 0 10px;
+    color: #ffffff;
+    margin-top: 10px;
 }
-.card img{
+
+.card .imagen {
     width: 90%;
     height: auto;
     border-radius: 10px;
 }
-.card .title{
+
+.ejemplos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 0;
+    flex-wrap: wrap;
+}
+
+.ejemplo {
+    width: 2em;
+    height: 2em;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    object-fit: cover;
+    position: relative;
+    transition: transform 0.5s ease-in-out, z-index 0.3s ease, top 0.5s ease, left 0.5s ease;
+}
+
+
+/* .ejemplo:hover{
+    transform: scale(8);
+    transition: transform 0.3s;
+} */
+
+.ejemplo {
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+
+.ejemplo.grande {
+    transform: scale(8);
+    z-index: 999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(8);
+    z-index: 999;
+    transition: transform 0,8 cubic-bezier(0.25, 1, 0.5, 1), z-index 0s;
+}
+
+
+.card .title {
     font-size: 22px;
     margin-bottom: 10px;
     display: block;
     text-align: center;
 }
-SECTION H1{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+SECTION H1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin: 20px 0;
     color: #ffffff;
 }
-.tutorial-link{ /* enlace a tutoriales */
+
+.tutorial-link {
+    /* enlace a tutoriales */
     text-decoration: none;
     color: #3574F2;
     font-weight: bold;
@@ -241,9 +339,11 @@ SECTION H1{
     border-radius: 7px;
     transition: background-color 0.3s, color 0.3s;
 }
-.tutorial-link:hover{
+
+.tutorial-link:hover {
     color: #0d0d0d;
 }
+
 footer {
     background-color: #0D0D0D;
     color: #ffffff;
@@ -252,30 +352,34 @@ footer {
     /* margin-top: 20px; */
     /* border-top: 2px solid #e7e7e7; */
 }
-.grupo-whatsapp{
+
+.grupo-whatsapp {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
     gap: 20px;
 }
-.grupo-whatsapp img{
+
+.grupo-whatsapp img {
     width: 150px;
     height: 150px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.grupo-whatsapp p{
+
+.grupo-whatsapp p {
     max-width: 400px;
     font-size: 16px;
     color: #ffffff;
 }
-.grupo-whatsapp a{
+
+.grupo-whatsapp a {
     color: #35ECF2;
     text-decoration: none;
     font-weight: bold;
 }
-.grupo-whatsapp a:hover{
+
+.grupo-whatsapp a:hover {
     text-decoration: underline;
 }
-
