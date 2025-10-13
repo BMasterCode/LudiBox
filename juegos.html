@@ -290,6 +290,57 @@
                         </p>
                     </div>
                 </div>
+                <div class="card" id="polilla_tramposa">
+                    <!-- parte delantera -->
+                    <div class="card-front">
+                        <img src="juegos/Pollilla_tramposa.jpg" alt="polilla_tramposa" class="imagen">
+                    </div>
+                    <!-- parte que va a girar -->
+                    <div class="card-back">
+                        <p class="card-descripcion">
+                            <strong class="title">🦋 POLILLA TRAMPOSA</strong> <br>
+                            Polilla Tramposa es un juego de cartas rápido, divertido y lleno de engaños, donde ¡hacer
+                            trampa está permitido!
+                            El objetivo es deshacerte de todas tus cartas antes que los demás <br>
+                            <strong class="ejemplos">
+                                <img src="ejemplos/polilla1.jpg" alt="polilla-ejemplo" class="ejemplo"> <br>
+                                <img src="ejemplos/polilla2.jpg" alt="polilla2-ejemplo" class="ejemplo"> <br>
+                                <img src="ejemplos/polilla3.webp" alt="polilla3-ejemplo" class="ejemplo">
+                            </strong>
+                            Especificaciones: <br>
+                            ⏳ Tiempo: 15 – 20 min <br>
+                            👥 Jugadores: 3 – 5 <br>
+                            🎚️ Dificultad: Baja
+                            <a href="https://www.tiktok.com/@ouroborostore/video/7304683922896473350?is_from_webapp=1&sender_device=pc&web_id=7546640627891471877"
+                                class="tutorial-link" target="_blank">Tutorial</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card" id="saboteur">
+                    <!-- parte delantera -->
+                    <div class="card-front">
+                        <img src="juegos/saboteur.png" alt="saboteur" class="imagen">
+                    </div>
+                    <!-- parte que va a girar -->
+                    <div class="card-back">
+                        <p class="card-descripcion">
+                            <strong class="title">⛏️ SABOTEUR</strong> <br>
+                            En Saboteur, los jugadores son enanos mineros que cavan túneles en busca de oro. Pero entre
+                            ellos hay saboteadores secretos que intentan impedir que los demás lleguen al tesoro.
+                            <strong class="ejemplos">
+                                <img src="ejemplos/saboteur1.jpg" alt="saboteur-ejemplo" class="ejemplo"> <br>
+                                <img src="ejemplos/saboteur2.jpg" alt="saboteur2-ejemplo" class="ejemplo"> <br>
+                                <img src="ejemplos/saboteur3.webp" alt="saboteur3-ejemplo" class="ejemplo">
+                            </strong>
+                            Especificaciones: <br>
+                            ⏳ Tiempo: 15 – 30 min <br>
+                            👥 Jugadores: 3 – 10 <br>
+                            🎚️ Dificultad: media 
+                            <a href="https://www.tiktok.com/@fortaleza.ludica/video/7511518202380274949?is_from_webapp=1&sender_device=pc&web_id=7546640627891471877"
+                                class="tutorial-link" target="_blank">Tutorial</a>
+                        </p>
+                    </div>
+                </div>
                 <div class="card" id="spot-it">
                     <!-- parte delantera -->
                     <div class="card-front">
@@ -353,26 +404,27 @@
             });
         });
 
-        
+
         // Efecto de agrandar y volver automáticamente
         document.querySelectorAll(".ejemplo").forEach(elemento => {
             elemento.addEventListener("click", (event) => {
                 event.stopPropagation(); // evita interferir con el giro de la carta
 
-                
+                // Remueve la imagen de fondo para un efecto más limpio
+                document.body.style.backgroundImage = 'none';
+                // Agrega la clase para el fondo oscuro
+                document.body.classList.add("oscuro");
+
                 // Si ya está agrandado, no volvemos a activarlo
                 if (elemento.classList.contains("grande")) return;
-                
-                // Agrega la clase para el fondo oscuro
-                document.body.classList.add("fondo-oscuro");
-                
+
                 // Agrega la clase para agrandar
                 elemento.classList.add("grande");
 
                 // Después de 5 segundos vuelve a su tamaño normal
                 setTimeout(() => {
                     elemento.classList.remove("grande");
-                    document.body.classList.remove("fondo-oscuro");
+                    document.body.classList.remove("oscuro");
                 }, 1500);
             });
         });

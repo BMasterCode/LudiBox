@@ -9,7 +9,8 @@ body{
     transition: background-color 0.5s ease; /* Transición suave para el cambio de color de fondo*/
 }
 
-body.fondo-oscuro {
+body.oscuro {
+    /* background-image: none; Color de fondo oscuro */
     background-color: #0d0d0d; /* Color de fondo oscuro con transparencia */
 }
 
