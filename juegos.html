@@ -25,14 +25,13 @@
                     <img src="imagenes/imagen logo.png" alt="logo" class="logo" />
                 </li>
             </ul>
-            <hr />
         </nav>
     </header>
     <main class="main-juegos">
         <!-- boton a wattsapp -->
         <a href="https://wa.me/59167436241"><img src="imagenes/whatsapp-color.png" alt="whatsapp" id="numero"></a>
         <section class="juegos-mesa">
-            <h1>JUEGOS DE MESA</h1>
+            <h1 class="division">JUEGOS DE MESA</h1>
             <div class="card-container">
                 <div class="card" id="catan">
                     <!-- parte delantera -->
@@ -189,7 +188,7 @@
             </div>
         </section>
         <section class="juegos-cartas">
-            <H1>JUEGOS DE CARTAS</H1>
+            <H1 class="division">JUEGOS DE CARTAS</H1>
             <div class="card-container">
                 <div class="card" id="virus">
                     <!-- parte delantera -->
@@ -395,40 +394,8 @@
         </section>
     </main>
 
+    <script src="codigo.js"></script>
 
-    <!-- esto es el scrip para que las cartas se den la vuelta con click-->
-    <script>
-        document.querySelectorAll(".card").forEach(card => {
-            card.addEventListener("click", () => {
-                card.classList.toggle("volteada");
-            });
-        });
-
-
-        // Efecto de agrandar y volver automáticamente
-        document.querySelectorAll(".ejemplo").forEach(elemento => {
-            elemento.addEventListener("click", (event) => {
-                event.stopPropagation(); // evita interferir con el giro de la carta
-
-                // Remueve la imagen de fondo para un efecto más limpio
-                document.body.style.backgroundImage = 'none';
-                // Agrega la clase para el fondo oscuro
-                document.body.classList.add("oscuro");
-
-                // Si ya está agrandado, no volvemos a activarlo
-                if (elemento.classList.contains("grande")) return;
-
-                // Agrega la clase para agrandar
-                elemento.classList.add("grande");
-
-                // Después de 5 segundos vuelve a su tamaño normal
-                setTimeout(() => {
-                    elemento.classList.remove("grande");
-                    document.body.classList.remove("oscuro");
-                }, 1500);
-            });
-        });
-    </script>
 
 </body>
 
