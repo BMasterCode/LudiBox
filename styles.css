@@ -277,6 +277,7 @@ nav .logo {
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    will-change: transform, height;
 }
 
 .card.volteada {
@@ -312,7 +313,7 @@ nav .logo {
     color: white;
     transform: rotateY(180deg);
     transition: height 0.8s ease; /*animacion para ajustar altura al voltear */
-
+    overflow: hidden;
 }
 
 .card-descripcion {

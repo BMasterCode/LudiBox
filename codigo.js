@@ -2,9 +2,11 @@
 document.querySelectorAll(".card").forEach(card => {
     card.addEventListener("click", () => {
         const back = card.querySelector(".card-back");
-        card.classList.toggle("volteada");
+        //card.classList.toggle("volteada");
+        const isFlipped = card.classList.contains("volteada");
 
-        if (card.classList.contains("volteada")) {
+        //if (card.classList.contains("volteada")) {
+        if (!isFlipped) {
             // Mostrar temporalmente el back fuera de vista para medir altura
             back.style.visibility = "hidden";
             back.style.display = "block";
@@ -17,10 +19,21 @@ document.querySelectorAll(".card").forEach(card => {
                 card.style.height = alturaReal + "px";
                 back.style.height = alturaReal + "px";
             }, 800); // coincide con la duración de transform
+
+            // Agregar clase volteada
+            card.classList.add("volteada");
         } else {
-            // Volver al tamaño original
-            card.style.height = "300px";
-            back.style.height = "300px";
+            // Si ya está volteada (viendo el back): primero encoger, luego girar
+            const alturaOriginal = 300; // altura del frente
+            back.style.transition = "height 0.6s ease";
+            back.style.height = alturaOriginal + "px";
+            card.style.height = alturaOriginal + "px";
+
+            // Esperar que termine la transición antes de girar
+            setTimeout(() => {
+                card.classList.remove("volteada");
+            }, 600); // el tiempo que tarda en encogerse
+
         }
     });
 });
@@ -47,7 +60,7 @@ document.body.addEventListener("click", (event) => {
 
     // Quita el fondo oscuro
     document.body.classList.remove("fondo-oscuro");
-}); 
+});
 
 
 
