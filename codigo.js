@@ -2,7 +2,6 @@
 document.querySelectorAll(".card").forEach(card => {
     card.addEventListener("click", () => {
         const back = card.querySelector(".card-back");
-        //card.classList.toggle("volteada");
         const isFlipped = card.classList.contains("volteada");
 
         //if (card.classList.contains("volteada")) {
@@ -23,6 +22,10 @@ document.querySelectorAll(".card").forEach(card => {
             // Agregar clase volteada
             card.classList.add("volteada");
         } else {
+            // Volver al tamaño original
+            //card.style.height = "300px";
+            //back.style.height = "300px";
+
             // Si ya está volteada (viendo el back): primero encoger, luego girar
             const alturaOriginal = 300; // altura del frente
             back.style.transition = "height 0.6s ease";
@@ -39,6 +42,7 @@ document.querySelectorAll(".card").forEach(card => {
 });
 
 // Efecto de agrandar al hacer click
+
 
 
 document.querySelectorAll(".ejemplo").forEach(elemento => {
@@ -61,6 +65,3 @@ document.body.addEventListener("click", (event) => {
     // Quita el fondo oscuro
     document.body.classList.remove("fondo-oscuro");
 });
-
-
-

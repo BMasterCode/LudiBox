@@ -280,6 +280,7 @@ nav .logo {
     will-change: transform, height;
 }
 
+
 .card.volteada {
     /* clase para voltear las cartas */
     transform: rotateY(180deg);
@@ -327,7 +328,7 @@ nav .logo {
 
 .card .imagen {
     width: 90%;
-    height: auto;
+    height: 85%;
     border-radius: 10px;
 }
 
@@ -352,10 +353,6 @@ nav .logo {
     transition: transform 0.3s ease, z-index 0.3s ease;
     z-index: 501;
 }
-/* .ejemplo:hover{
-    transform: scale(8);
-    transition: transform 0.3s;
-} */
 
 .ejemplo.grande {
     transform: scale(8);
@@ -364,9 +361,9 @@ nav .logo {
     left: 50%;
     transform: translate(-50%, -50%) scale(8);
     transition: transform 0,8 cubic-bezier(0.25, 1, 0.5, 1), z-index 0s;
-    cursor: zoom-out;
+    cursor: zoom-in;
     /* cursor: zoom-in; */
-    z-index: 1001;
+    z-index: 1000;
 }
 
 
@@ -459,5 +456,3 @@ footer {
         background-position: top;
     }
 }
-
-
