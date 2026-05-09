@@ -56,12 +56,15 @@ document.querySelectorAll(".ejemplo").forEach(elemento => {
     });
 });
 
-// Cuando el usuario toca el fondo, vuelve todo a normal
-document.body.addEventListener("click", (event) => {
-    // Solo si hizo click fuera de la carta agrandada
-    const agrandadas = document.querySelectorAll(".ejemplo.grande");
-    agrandadas.forEach(card => card.classList.remove("grande"));
+const modal = document.getElementById("promoModal");
+const closeBtn = document.querySelector(".close");
 
-    // Quita el fondo oscuro
-    document.body.classList.remove("fondo-oscuro");
-});
+closeBtn.onclick = () => {
+  modal.style.display = "none";
+};
+
+window.onclick = (e) => {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
+};
