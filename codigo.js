@@ -53,6 +53,16 @@ document.querySelectorAll(".ejemplo").forEach(elemento => {
         document.body.classList.add("fondo-oscuro");
         // Agrega la clase para agrandar
         elemento.classList.add("grande");
+
+        // Cierra al hacer click fuera del elemento
+        const cerrarAlHacerClickFuera = (e) => {
+            if (!elemento.contains(e.target)) {
+                elemento.classList.remove("grande");
+                document.body.classList.remove("fondo-oscuro");
+                document.removeEventListener("click", cerrarAlHacerClickFuera);
+            }
+        };
+        document.addEventListener("click", cerrarAlHacerClickFuera);
     });
 });
 

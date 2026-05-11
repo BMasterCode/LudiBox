@@ -83,7 +83,9 @@ body.fondo-oscuro::before{
     float: right;
     font-size: 28px;
     cursor: pointer;
-    padding: 1px;
+    padding: 1px 7px;
+    background-color: #0d1f71;
+    color: #ffffff;
 }
 @keyframes aparecer {
     from {
